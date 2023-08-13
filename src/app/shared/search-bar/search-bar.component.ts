@@ -14,6 +14,7 @@ import { ControlContainer, FormGroupDirective } from '@angular/forms';
 })
 export class SearchBarComponent {
   @Input() controlName: string;
+  @Input() loading: boolean;
   @Input() placeholder: string = 'Search...';
   @Output() onClickEvent = new EventEmitter();
 

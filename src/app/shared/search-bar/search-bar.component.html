@@ -8,5 +8,9 @@
     autocomplete="off"
   />
 
-  <button class="search-icon" (click)="handleClickEvent()"></button>
+  <button
+    class="search-icon"
+    (click)="handleClickEvent()"
+    [class.--loading]="loading"
+  ></button>
 </div>
