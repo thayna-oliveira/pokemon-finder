@@ -1,0 +1,8 @@
+@import "spacing";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $spacing-4;
+}

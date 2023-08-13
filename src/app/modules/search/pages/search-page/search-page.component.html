@@ -1,1 +1,24 @@
- 
+<div class="container">
+  <form [formGroup]="formGroup">
+    <app-search-bar
+      #search
+      controlName="search"
+      (onClickEvent)="getPokemon()"
+      [loading]="loading"
+    ></app-search-bar>
+  </form>
+
+  <app-card
+    [@inOutAnimation]
+    *ngIf="pokemon$ | async as pokemon"
+    [pokemonData]="pokemon"
+  ></app-card>
+
+  <app-alert
+    [@inOutAnimation]
+    *ngIf="showError"
+    (onCloseEvent)="handleOnCloseAlert()"
+    title="Sorry! An error occurred :("
+    description="No Pokémon matched your search. Please, check if you wrote it right and try again!"
+  ></app-alert>
+</div>
