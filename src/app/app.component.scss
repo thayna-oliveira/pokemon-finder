@@ -1,0 +1,36 @@
+@import "spacing";
+@import "colors";
+
+.app {
+  background: url("/assets/bg.png") bottom repeat-x;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: $spacing-7 0;
+  gap: $spacing-5;
+
+  > .header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: $spacing-4;
+    text-align: center;
+    justify-content: flex-end;
+    flex: 1;
+  }
+
+  > .main {
+    flex-grow: 1;
+  }
+
+  > .footer {
+    font-size: 0.85rem;
+    color: $color-dark-grey;
+
+    .credits {
+      color: $color-dark-grey;
+    }
+  }
+}
