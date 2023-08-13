@@ -21,7 +21,7 @@ describe('TagComponent', () => {
   });
 
   it('should render the correct label', () => {
-    component.label = 'eletric';
+    component.type = 'eletric';
     fixture.detectChanges();
 
     const tag = fixture.debugElement.query(By.css('.tag'));

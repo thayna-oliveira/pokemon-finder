@@ -3,9 +3,11 @@
 
 .tag {
   display: inline-flex;
-  padding: $spacing-1;
+  padding: $spacing-1 $spacing-2;
   border-radius: 30px;
   font-size: 0.85rem;
+  line-height: 0.85rem;
   font-weight: 600;
   color: $color-white;
+  justify-content: center;
 }
