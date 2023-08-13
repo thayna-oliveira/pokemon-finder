@@ -45,7 +45,7 @@ export class SearchPageComponent implements OnInit {
     const pokemon = this.formGroup.get('search')?.value;
 
     this.pokemon$ = this.pokemonDetailsService.getPokemon(pokemon).pipe(
-      delay(900),
+      delay(600),
       map((pokemonData: Pokemon) => {
         this.handleOnSuccess();
         return pokemonData;
