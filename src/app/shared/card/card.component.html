@@ -1,0 +1,27 @@
+<div class="card" [@overlay]>
+  <svg class="background" height="100%" width="100%">
+    <use
+      xlink:href="/assets/images/card-bg.svg#shape"
+      [style.fill]="'var(--color-' + pokemonData.types[0] + ')'"
+    ></use>
+  </svg>
+
+  <img class="image" [src]="pokemonData.image" />
+  <span class="id">Nº {{ pokemonData.id }}</span>
+  <h2 class="name">{{ pokemonData.name | titlecase }}</h2>
+
+  <div class="types">
+    <app-tag *ngFor="let type of pokemonData.types" [type]="type"></app-tag>
+  </div>
+
+  <div class="details">
+    <app-card-detail
+      icon="assets/icons/height.svg"
+      [content]="pokemonData.height + 'm'"
+    ></app-card-detail>
+    <app-card-detail
+      icon="assets/icons/weight.svg"
+      [content]="pokemonData.weight + 'kg'"
+    ></app-card-detail>
+  </div>
+</div>
