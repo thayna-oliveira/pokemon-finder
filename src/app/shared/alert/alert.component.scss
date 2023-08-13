@@ -1,0 +1,32 @@
+@import "colors";
+@import "spacing";
+
+.alert {
+  background: lighten($color-primary, 52%);
+  border-radius: 16px;
+  padding: $spacing-3 $spacing-4;
+  display: grid;
+  grid-template-columns: 1fr 16px;
+
+  > .close-icon {
+    background: url("/assets/icons/close.svg");
+    width: 16px;
+    height: 16px;
+    border: none;
+    outline: none;
+  }
+
+  > .content {
+    gap: $spacing-1;
+    display: flex;
+    flex-direction: column;
+
+    > .title {
+      font-size: 1.08rem;
+    }
+
+    > .description {
+      font-size: 0.85rem;
+    }
+  }
+}
