@@ -1,0 +1,33 @@
+@import "colors";
+@import "spacing";
+
+.search-bar {
+  border-radius: 30px;
+  border: 1px solid $color-grey;
+  background: $color-white;
+  padding: 0 $spacing-3;
+  display: flex;
+  align-items: center;
+
+  > .search-field {
+    flex: 1;
+    border: none;
+    outline: none;
+    height: 50px;
+    color: $color-dark-grey;
+    font-size: 1rem;
+
+    &::placeholder {
+      font-size: 1rem;
+      color: $color-grey;
+    }
+  }
+
+  > .search-icon {
+    background: url("/assets/search.svg") no-repeat center;
+    border: 0;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+}
