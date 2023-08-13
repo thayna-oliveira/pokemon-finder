@@ -10,8 +10,9 @@ module.exports = {
   roots: ["src"],
   setupFilesAfterEnv: ["<rootDir>/setup-jest.ts"],
   moduleNameMapper: {
-    "@shared/(.*)": "<rootDir>/src/app/shared/$1",
-    "@app/(.*)": "<rootDir>/src/app/$1",
+    "@env/(.*)": ["<rootDir>/src/environments/$1"],
+    "@core/(.*)": ["<rootDir>/src/core/$1"],
+    "@shared/(.*)": ["<rootDir>/src/app/shared/$1"],
   },
   testPathIgnorePatterns: ignorePaths,
   transformIgnorePatterns: ["node_modules/(?!.*.mjs$)"],
