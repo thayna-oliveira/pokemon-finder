@@ -1,0 +1,11 @@
+@import "colors";
+@import "spacing";
+
+.detail {
+  background: $color-light-grey;
+  padding: $spacing-1;
+  border-radius: 8px;
+  display: flex;
+  font-size: 0.75rem;
+  gap: $spacing-1;
+}
