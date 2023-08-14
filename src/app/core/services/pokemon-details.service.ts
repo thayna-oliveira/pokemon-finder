@@ -30,9 +30,13 @@ export class PokemonDetailsService {
       image: this.getImage(pokemonData.sprites),
       name: pokemonData.name,
       types: this.getTypes(pokemonData.types),
-      height: pokemonData.height,
-      weight: pokemonData.weight,
+      height: this.formatValues(pokemonData.height),
+      weight: this.formatValues(pokemonData.weight),
     };
+  }
+
+  private formatValues(value: number): string {
+    return (value * 0.1).toFixed(1);
   }
 
   private getImage(sprites: any): string {
