@@ -19,7 +19,7 @@ Click here <strong><a href="https://app-pokemon-finder.netlify.app/" target="_bl
 | <img src="./.github/screenshot1.png" /> | <img src="./.github/screenshot2.png"/> |
 | :-------------------------------------: | :------------------------------------: |
 
-## 📥 Getting Started
+### 📥 Getting Started
 
 1. Start by cloning the repo
 
@@ -43,14 +43,15 @@ Now you are ready to find your pokémon! 🎉 You just need to navigate to `http
 
 <br />
 
-## 👩‍💻 Built with
+### 👩‍💻 Built with
 
 - [Angular v 15.2.9](https://github.com/angular/angular-cli)
 - [PokéAPI](https://pokeapi.co/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Jest](https://jestjs.io/)
-  <br />
 
-## 🧡 Credits
+<br />
+
+### 🧡 Credits
 
 Thanks to PokéAPI for sharing free data and images to build this app.
