@@ -11,6 +11,7 @@ module.exports = {
   setupFilesAfterEnv: ["<rootDir>/setup-jest.ts"],
   moduleNameMapper: {
     "@env/(.*)": ["<rootDir>/src/environments/$1"],
+    "@services/(.*)": "<rootDir>/src/app/core/services/$1",
     "@core/(.*)": ["<rootDir>/src/core/$1"],
     "@shared/(.*)": ["<rootDir>/src/app/shared/$1"],
   },
@@ -19,4 +20,5 @@ module.exports = {
   coveragePathIgnorePatterns: ignorePaths,
   modulePathIgnorePatterns: ignorePaths,
   resetModules: false,
+  moduleDirectories: ["node_modules", "src"],
 };

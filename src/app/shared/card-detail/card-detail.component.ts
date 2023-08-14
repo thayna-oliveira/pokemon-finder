@@ -7,6 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class CardDetailComponent {
   @Input() icon: string;
-
   @Input() content: string;
 }

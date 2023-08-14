@@ -25,6 +25,6 @@ describe('TagComponent', () => {
     fixture.detectChanges();
 
     const tag = fixture.debugElement.query(By.css('.tag'));
-    expect(tag.nativeElement.textContent.trim()).toBe('eletric');
+    expect(tag.nativeElement.textContent.trim()).toBe('Eletric');
   });
 });

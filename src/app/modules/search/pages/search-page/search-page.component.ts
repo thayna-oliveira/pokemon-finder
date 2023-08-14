@@ -1,9 +1,9 @@
 import { animate, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Pokemon } from '@core/interfaces/pokemon.interface';
+import { PokemonDetailsService } from '@services/pokemon-details.service';
 import { catchError, delay, finalize, map, Observable, throwError } from 'rxjs';
-import { Pokemon } from 'src/app/core/interfaces/pokemon.interface';
-import { PokemonDetailsService } from 'src/app/core/services/pokemon-details.service';
 
 @Component({
   selector: 'app-search-page',
@@ -45,7 +45,7 @@ export class SearchPageComponent implements OnInit {
     const pokemon = this.formGroup.get('search')?.value;
 
     this.pokemon$ = this.pokemonDetailsService.getPokemon(pokemon).pipe(
-      delay(600),
+      delay(500),
       map((pokemonData: Pokemon) => {
         this.handleOnSuccess();
         return pokemonData;

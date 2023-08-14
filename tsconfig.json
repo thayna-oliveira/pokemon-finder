@@ -23,6 +23,7 @@
     "lib": ["ES2022", "dom"],
     "strictPropertyInitialization": false,
     "paths": {
+      "@services/*": ["src/app/core/services/*"],
       "@core/*": ["src/app/core/*"],
       "@env/*": ["src/environments/*"],
       "@shared/*": ["src/app/shared/*"]
