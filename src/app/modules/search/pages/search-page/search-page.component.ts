@@ -36,7 +36,7 @@ export class SearchPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.formGroup = this.formBuilder.group({
-      search: ['', [Validators.minLength(2)]],
+      search: ['', [Validators.minLength(3), Validators.required]],
     });
   }
 

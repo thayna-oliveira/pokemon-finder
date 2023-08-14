@@ -12,5 +12,7 @@
     class="search-icon"
     (click)="handleClickEvent()"
     [class.--loading]="loading"
+    [class.--disabled]="disableButton"
+    [disabled]="disableButton"
   ></button>
 </div>

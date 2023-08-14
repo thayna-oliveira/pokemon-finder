@@ -5,6 +5,7 @@
       controlName="search"
       (onClickEvent)="getPokemon()"
       [loading]="loading"
+      [disableButton]="formGroup.invalid"
     ></app-search-bar>
   </form>
 
@@ -15,7 +16,6 @@
   ></app-card>
 
   <app-alert
-    [@inOutAnimation]
     *ngIf="showError"
     (onCloseEvent)="handleOnCloseAlert()"
     title="Sorry! An error occurred :("

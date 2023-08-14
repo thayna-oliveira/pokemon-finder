@@ -16,6 +16,8 @@ export class SearchBarComponent {
   @Input() controlName: string;
   @Input() loading: boolean;
   @Input() placeholder: string = 'Search...';
+  @Input() disableButton: boolean = true;
+
   @Output() onClickEvent = new EventEmitter();
 
   handleClickEvent(): void {
