@@ -1,27 +1,56 @@
-# PokemonFinder
+<div align="center">
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.9.
+![bulbasaur](https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/1.gif)
+![charmander](https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/4.gif)
+![pikachu](https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/25.gif)
 
-## Development server
+## Pokémon Finder
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Pokémon Finder is an online pokédex made with Angular & PokéAPI where you can find information about your favorite pokémon!
 
-## Code scaffolding
+Click here <strong><a href="https://app-pokemon-finder.netlify.app/" target="_blank">to view demo</a></strong>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+</div>
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### ✨ Screenshots
 
-## Running unit tests
+| <img src="./.github/screenshot1.png" /> | <img src="./.github/screenshot2.png"/> |
+| :-------------------------------------: | :------------------------------------: |
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 📥 Getting Started
 
-## Running end-to-end tests
+1. Start by cloning the repo
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+$ git clone https://github.com/thayna-oliveira/pokemon-finder.git && cd pokemon-finder
+```
 
-## Further help
+2. Install NPM packages
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+$ npm install
+```
+
+3. Run the local development server
+
+```bash
+$ npm run start
+```
+
+Now you are ready to find your pokémon! 🎉 You just need to navigate to `http://localhost:4200/` and play with the app.
+
+<br />
+
+## 👩‍💻 Built with
+
+- [Angular v 15.2.9](https://github.com/angular/angular-cli)
+- [PokéAPI](https://pokeapi.co/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Jest](https://jestjs.io/)
+  <br />
+
+## 🧡 Credits
+
+Thanks to PokéAPI for sharing free data and images to build this app.
